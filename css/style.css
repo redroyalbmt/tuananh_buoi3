@@ -35,14 +35,14 @@ ul {
 .menu_ul {
     width: 60%;
     display: grid;
-    grid-template-columns: 23% 15% 24% 20% 23%;
+    grid-template-columns: 21% 15% 24% 20% 23%;
     list-style: none;
 
 
 }
 
 .menu_ul a {
-    color: white;
+    color: rgb(250, 246, 246);
     font-size: 18px;
     line-height: 50px;
 
@@ -57,22 +57,44 @@ ul {
 }
 
 .menu_ul>li:hover {
-    background-color: rgb(255, 73, 119);
+    background-color: rgb(255, 135, 205);
 
 }
 
+
 .menu_ul>li:hover a {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .submenu {
     position: absolute;
-
+    background-color: rgb(255, 187, 227);
     width: 153px;
     border-radius: 0px 0px 7px 7px;
+    display: none;
 
-    display: block;
 }
+
+.submenu_1 {
+    position: absolute;
+    background-color: rgb(255, 187, 227);
+    width: 96px;
+    border-radius: 0px 0px 7px 7px;
+    display: none;
+
+}
+
+.submenu_2 {
+    position: absolute;
+    background-color: rgb(255, 187, 227);
+    width: 134px;
+    border-radius: 0px 0px 7px 7px;
+    display: none;
+    margin-left: -14px;
+
+
+}
+
 
 .searchbox {
     padding-top: 5px;
@@ -81,27 +103,28 @@ ul {
 }
 
 .searchbox>input {
-    height: 40px;
+    height: 33px;
     line-height: 40px;
     font-size: 20px;
     border: 0px;
-    margin-right: 4px;
+    margin-right: 3px;
+    margin-top: 5px;
 }
 
 .searchbox>input:focus {
-    background-color: aqua;
+    background-color: rgb(247, 216, 223);
     list-style: none;
 }
 
 .searchbox>button {
     height: 40px;
-    border: 1px solid rgb(10, 218, 255);
-    color: rgb(2, 158, 255);
+    border: 1px solid rgb(255, 201, 222);
+    color: rgb(255, 90, 186);
     border-radius: 16px;
 }
 
 .searchbox>button:hover {
-    background-color: rgb(5, 202, 236);
+    background-color: rgb(255, 172, 193);
     color: white;
 }
 
@@ -109,17 +132,60 @@ ul {
     display: block;
 }
 
+.productLi:hover .submenu_1 {
+    display: block;
+}
+
+.productLi:hover .submenu_2 {
+    display: block;
+}
+
 .submenu>li:hover {
-    background-color: rgb(255, 73, 119);
+    background-color: rgb(255, 172, 193);
+
+}
+
+.submenu_1>li:hover {
+    background-color: rgb(255, 172, 193);
+
+}
+
+.submenu_2>li:hover {
+    background-color: rgb(255, 172, 193);
+
+}
+
+.submenu_2>li a {
+    padding-left: 15px;
 }
 
 .submenu>li:hover a {
-    color: rgb(255, 0, 0);
+    color: black;
 }
+
+.submenu_1>li:hover a {
+    color: black;
+}
+
+.submenu_2>li:hover a {
+    color: black;
+}
+
 
 .submenu>a {
     padding-left: 10px;
 
+
+}
+
+.submenu_1>a {
+    padding-left: 10px;
+
+
+}
+
+.submenu_2>a {
+    padding-left: 12px;
 }
 
 .main {
@@ -131,6 +197,31 @@ ul {
 
 .sliderbar {
     border-right: 1px solid black;
+    font-size: 19px;
+    text-align: center;
+}
+
+.sliderbar>ul {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.sliderbar li {
+    line-height: 40px;
+
+    margin-bottom: 10px;
+}
+
+.sliderbar li:hover {
+    background-color: rgb(255, 172, 193);
+    margin-right: 4px;
+    margin-left: 2px;
+
+}
+
+.sliderbar li:hover a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 
 .main_1 {
@@ -149,7 +240,7 @@ ul {
     padding: 10px 10px;
     display: grid;
     grid-template-columns: 100%;
-    box-shadow: 2px 2px 2px 2px gray;
+    box-shadow: 2px 2px 2px 2px rgb(255, 190, 228);
     margin-bottom: 20px;
     border-radius: 7px;
 }
@@ -185,12 +276,12 @@ ul {
 }
 
 .productitem>.row:last-child button {
-    border: 1px solid rgb(15, 16, 10);
+    border: 1px solid rgb(255, 190, 228);
     background: none;
 }
 
 .productitem>.row:last-child button:hover {
-    background-color: aqua;
+    background-color: rgb(255, 190, 228);
     color: black;
 }
 
@@ -201,7 +292,7 @@ footer {
 }
 
 footer>.row {
-    width: 98%;
+    width: 100%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -216,4 +307,10 @@ footer>.row>.col:last-child>iframe {
     width: 100%;
 
 
+}
+
+footer>.row li {
+    color: rgb(255, 206, 234);
+    font-size: 59px;
+    margin-top: 95px;
 }
